@@ -1,6 +1,6 @@
 # CalishredFitness
 
-[Calishred Fitness](https://nikhilsourav.github.io/CalishredFitness/) is a personal trainer service by [Pranav Thakur](https://www.linkedin.com/in/pranav-calishred/).
+[Calishred Fitness](https://nikhilsourav.github.io/CalishredFitness/) is a Fitness Coaching Program by [Pranav Thakur](https://www.linkedin.com/in/pranav-calishred/).
 
 ## Demo:
 
