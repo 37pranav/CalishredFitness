@@ -215,7 +215,7 @@ header .hamburger.active span:nth-child(3) {
    *********
 */
 .home {
-  background-image: url("../images/Hero-1-optimized.jpeg");
+   background-color: #2E3192;
   height: 100vh;
   background-size: cover;
   background-position: center;
