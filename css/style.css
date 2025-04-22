@@ -245,8 +245,8 @@ header .hamburger.active span:nth-child(3) {
   height: 2px;
   transform: translateY(-5px);
 }
-.home h1 {
-  font-size: 2.8em;
+.home h2 {
+  font-size: 1.3em;
   font-family: "Coda Caption";
   letter-spacing: -2px;
   word-spacing: 5px;
