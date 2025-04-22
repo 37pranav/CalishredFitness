@@ -233,7 +233,7 @@ header .hamburger.active span:nth-child(3) {
 .home span {
   color: var(--darkBlue);
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 3em;
   margin-bottom: 20px;
 }
 .home span::before {
