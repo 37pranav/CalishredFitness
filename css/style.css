@@ -215,7 +215,12 @@ header .hamburger.active span:nth-child(3) {
    *********
 */
 .home {
-   background-color: #2E3192;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ background-color: #2E3192;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -233,9 +238,13 @@ header .hamburger.active span:nth-child(3) {
 .home span {
   color: var(--darkBlue);
   text-transform: uppercase;
-  font-size: 3em;
   margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
+
 .home span::before {
   content: "";
   display: inline-block;
