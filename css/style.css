@@ -266,9 +266,13 @@ header .hamburger.active span:nth-child(3) {
 /* buttons */
 .btn-container {
   padding-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .buttons {
-  display: table;
+  display: block;
+  margin: 0 auto;
   height: fit-content;
   width: fit-content;
   outline: none;
