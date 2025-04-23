@@ -255,12 +255,16 @@ header .hamburger.active span:nth-child(3) {
   transform: translateY(-5px);
 }
 .home h2 {
-  font-size: 1.3em;
-  font-family: "Coda Caption";
-  letter-spacing: -2px;
-  word-spacing: 5px;
-  text-transform: uppercase;
-  color: var(--white);
+   font-family: 'Poppins', sans-serif;
+  color: #00f0ff;
+  text-shadow: 
+    0 0 5px #00f0ff,
+    0 0 10px #00f0ff,
+    0 0 20px #00f0ff,
+    0 0 40px #00bcd4,
+    0 0 80px #0086b3;
+  animation: pulseGlow 2s infinite;
+
 }
 
 /* buttons */
