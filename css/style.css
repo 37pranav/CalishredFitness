@@ -176,7 +176,7 @@ header .hamburger span {
   display: block;
   background-color: var(--white);
   width: 25px;
-  transition: tranform 0.5 ease;
+  transition: transform 0.5 ease;
   -webkit-transition: transform 0.5s ease;
 }
 header.sticky {
@@ -226,8 +226,6 @@ header .hamburger.active span:nth-child(3) {
   background-position: center;
   background-attachment: fixed;
   padding: 15px;
-  display: flex;
-  -webkit-display: flex;
 }
 .home .container {
   display: flex;
