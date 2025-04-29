@@ -62,6 +62,12 @@ header .container {
   max-height: 60px;
   width: auto;
 }
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .logo-img {
+    max-height: 40px;  /* Adjust this value to fit your design */
+  }
+}
 header .nav {
   position: fixed;
   background-color: var(--blue);
