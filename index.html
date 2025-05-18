@@ -128,6 +128,12 @@ fbq('track', 'PageView');
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+                // Hamburger
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".nav").toggleClass("open")
+                $(this).toggleClass("active")
+            })
         })
         // Sticky Nav
         window.addEventListener("scroll", function () {
