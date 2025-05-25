@@ -617,7 +617,10 @@ header .hamburger.active span:nth-child(3) {
     *Start Footer*
    *********
 */
-.footer {
+.footer
+{
+  text-align: center;
+  list-style: none;
   margin-top: 10vh;
   background-color: var(--black);
   color: var(--white);
