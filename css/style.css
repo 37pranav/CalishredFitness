@@ -630,6 +630,18 @@ header .hamburger.active span:nth-child(3) {
   margin-bottom: 2vh;
   padding: 2vh 0;
 }
+.footer-links-container {
+  text-align: center;
+}
+
+.footer-quick-links {
+  display: inline-block;
+  text-align: left; /* Optional: aligns text within the list items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .footer-left,
 .footer-center,
 .footer-right {
