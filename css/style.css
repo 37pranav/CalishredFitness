@@ -626,9 +626,9 @@ header .hamburger.active span:nth-child(3) {
 
 .footer-container {
   display: flex;
-  flex-direction: column;           /* mobile: stack vertically */
-  align-items: center;              /* center items horizontally */
-  gap: 2rem;                        /* space between groups */
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* — Divider — */
@@ -642,11 +642,12 @@ header .hamburger.active span:nth-child(3) {
 /* — Quick Links — */
 .footer-quick-links {
   display: flex;
-  flex-wrap: wrap;                 /* wrap nicely on small screens */
+  flex-wrap: wrap;
   gap: 1.25rem;
   padding: 0;
   margin: 0;
   list-style: none;
+  justify-content: center;
 }
 
 .footer-links {
@@ -657,9 +658,18 @@ header .hamburger.active span:nth-child(3) {
   transition: opacity 0.25s ease;
 }
 
-.footer-links:hover { opacity: 0.8; }
+.footer-links:hover {
+  opacity: 0.8;
+}
 
 /* — Logo + Copyright — */
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .footer-logo-text img {
   width: 150px;
   margin-bottom: 0.75rem;
@@ -670,21 +680,6 @@ header .hamburger.active span:nth-child(3) {
   font-size: 0.9em;
   word-spacing: 1px;
   letter-spacing: 0.5px;
-}
-
-/* =========
-   Responsive layout
-   ========= */
-@media (min-width: 640px) {
-  .footer-container {
-    flex-direction: row;            /* wide screens: logo + links side-by-side */
-    justify-content: center;        /* keep everything centered */
-    gap: 4rem;
-  }
-
-  .footer-logo-text {
-    text-align: left;               /* looks cleaner when next to links */
-  }
 }
 
 
