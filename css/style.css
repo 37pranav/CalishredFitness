@@ -217,18 +217,18 @@ header .hamburger.active span:nth-child(3) {
    *********
 */
 .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
- background-color: #2E3192;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   padding: 15px;
+  background: linear-gradient(-45deg, #2E3192, #007bff, #1f1fff, #3c5cda);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
 }
+
 .home .container {
   display: flex;
   -webkit-display: flex;
@@ -249,6 +249,17 @@ header .hamburger.active span:nth-child(3) {
     0 0 40px #00bcd4,
     0 0 80px #0086b3;
   animation: pulseGlow 2s infinite;
+}
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 }
 
