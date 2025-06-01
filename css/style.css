@@ -670,6 +670,13 @@ header .hamburger.active span:nth-child(3) {
   margin: 0;
   color: #555;
 }
+.faq-answer {
+  display: none;
+}
+
+.faq-answer.visible {
+  display: block;
+}
 
 
 /* =========
