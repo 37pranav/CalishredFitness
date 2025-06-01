@@ -624,6 +624,8 @@ header .hamburger.active span:nth-child(3) {
     *End Maps*
    *********
 */
+/* In your css/style.css file */
+
 .faq-section {
   padding: 60px 20px;
   background-color: #f9f9f9;
@@ -660,23 +662,43 @@ header .hamburger.active span:nth-child(3) {
 }
 
 .faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.faq-answer p {
-  padding: 0 0 15px 0;
-  margin: 0;
-  color: #555;
-}
-.faq-answer {
-  display: none;
+  max-height: 0; /* Initially hide the content */
+  overflow: hidden; /* Keep this to hide content that exceeds max-height */
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Added padding to transition too */
+  /* Remove padding from here or set to 0 if you want it only when visible */
+  padding-left: 15px; /* Optional: if you want consistent padding */
+  padding-right: 15px; /* Optional: if you want consistent padding */
 }
 
 .faq-answer.visible {
-  display: block;
+  max-height: 1000px; /* Set a value large enough for your content */
+  /* If you want padding only when visible, define it here: */
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
+
+.faq-answer p {
+  /* padding: 0 0 15px 0; -- This padding can be moved to .faq-answer.visible or kept if you want it within the flow */
+  margin: 0;
+  color: #555;
+  line-height: 1.6; /* Example: for better readability */
+}
+
+/* REMOVE THIS RULE:
+.faq-answer {
+  display: none;
+}
+*/
+
+/* KEEP THIS RULE, but it's now for max-height, not display:
+.faq-answer.visible {
+  display: block;  <-- This line is not needed if using max-height for visibility.
+                     The change in max-height handles the visibility.
+}
+*/
+
+
+
 
 
 /* =========
