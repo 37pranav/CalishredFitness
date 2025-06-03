@@ -355,6 +355,171 @@ fbq('track', 'PageView');
   </a>
 </section>
 
+                <!-- Include Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<style>
+  /* Section styling */
+  #testimonial-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+
+  #testimonial-section h2 {
+    color: #2E3192; /* Deep Blue */
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  /* Testimonial card */
+  .swiper-slide {
+    background: #f2f3fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .testimonial-rating {
+    color: #FFB400; /* Gold star */
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    min-height: 80px;
+  }
+
+  .testimonial-author {
+    color: #2E3192;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: right;
+  }
+
+  /* Swiper navigation buttons */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #2E3192;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    #testimonial-section h2 {
+      font-size: 28px;
+    }
+  }
+</style>
+
+<section id="testimonial-section">
+  <h2>What Our Clients Say</h2>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Testimonial Slide 1 -->
+      <div class="swiper-slide">
+        <div class="testimonial-rating">★★★★★</div>
+        <p class="testimonial-text">
+          "Calishred helped me lose 8 kg without ever stepping into a gym. The plan was easy to follow and the results were real."
+        </p>
+        <div class="testimonial-author">Amit S.</div>
+      </div>
+
+      <!-- Testimonial Slide 2 -->
+      <div class="swiper-slide">
+        <div class="testimonial-rating">★★★★★</div>
+        <p class="testimonial-text">
+          "I gained muscle and improved my energy levels within 12 weeks. The nutrition guidance is practical and sustainable."
+        </p>
+        <div class="testimonial-author">Neha M.</div>
+      </div>
+
+      <!-- Testimonial Slide 3 -->
+      <div class="swiper-slide">
+        <div class="testimonial-rating">★★★★★</div>
+        <p class="testimonial-text">
+          "The coaching was straightforward and no-BS. Loved the personalized workout plans and ongoing support."
+        </p>
+        <div class="testimonial-author">Rahul K.</div>
+      </div>
+
+      <!-- Add more testimonials here -->
+    </div>
+
+    <!-- Navigation arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <a
+      href="https://g.page/r/YOUR-GMB-LINK"
+      target="_blank"
+      style="
+        background-color: #2E3192;
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        display: inline-block;
+      "
+      >Read More Reviews</a
+    >
+  </div>
+</section>
+
+<!-- Include Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      // when window width is <= 640px
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      // when window width is <= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is > 768px
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
+
               
       <section class="faq-section">
   <div class="container">
