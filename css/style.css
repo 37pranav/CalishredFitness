@@ -941,4 +941,34 @@ header .hamburger.active span:nth-child(3) {
   .footer-right {
     width: 200px;
   }
+  /* === Fixed CTA Button === */
+.fixed-cta-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2E3192;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.fixed-cta-button:hover {
+  background-color: #1e2375;
+}
+@media (max-width: 768px) {
+  .fixed-cta-button {
+    width: calc(100% - 40px);
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    bottom: 15px;
+    font-size: 15px;
+  }
+}
+
 }
