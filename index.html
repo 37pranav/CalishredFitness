@@ -483,6 +483,155 @@ fbq('track', 'PageView');
     </div>
   </div>
 </section>
+<style>
+  .pricing-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 60px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+
+  .pricing-card {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 30px 20px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .pricing-card.highlight {
+    background: #2E3192;
+    color: white;
+    border: 2px solid #2E3192;
+    transform: scale(1.05);
+    position: relative;
+  }
+
+  .pricing-card.highlight::before {
+    content: "🔥 Most Popular";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffc107;
+    color: #2E3192;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .pricing-card p.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .pricing-card ul li {
+    margin-bottom: 10px;
+  }
+
+  .pricing-card a.button {
+    display: inline-block;
+    background: #2E3192;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .pricing-card.highlight a.button {
+    background: white;
+    color: #2E3192;
+  }
+
+  .pricing-card a.button:hover {
+    background: #1b1d6a;
+    color: white;
+  }
+
+  .pricing-card.highlight a.button:hover {
+    background: #ffc107;
+    color: #2E3192;
+  }
+
+  @media screen and (max-width: 768px) {
+    .pricing-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+
+<div class="pricing-section">
+
+  <!-- Starter -->
+  <div class="pricing-card">
+    <h3>Starter Shred</h3>
+    <p class="price">₹4,999 / 4 weeks</p>
+    <ul>
+      <li>✅ Beginner Workout Plan</li>
+      <li>✅ Basic Nutrition Plan</li>
+      <li>✅ 1 Weekly Call</li>
+      <li>📧 Email Support</li>
+      <li>📱 App Access</li>
+    </ul>
+    <a href="#get-started" class="button">Choose Starter</a>
+  </div>
+
+  <!-- Blueprint (highlighted) -->
+  <div class="pricing-card highlight">
+    <h3>Physique Blueprint</h3>
+    <p class="price">₹14,999 / 12 weeks</p>
+    <ul>
+      <li>✅ 3-Phase Nutrition Blueprint</li>
+      <li>✅ Smart Workout Plans</li>
+      <li>✅ 2 Weekly Coaching Calls</li>
+      <li>📧 Unlimited Email Support</li>
+      <li>📱 Full App Access</li>
+      <li>🍽 Supplement & Grocery Guide</li>
+    </ul>
+    <a href="#get-started" class="button">Join Blueprint</a>
+  </div>
+
+  <!-- Elite -->
+  <div class="pricing-card">
+    <h3>Elite 1-on-1 Coaching</h3>
+    <p class="price">₹24,999 / 12 weeks</p>
+    <ul>
+      <li>✅ Custom Evolving Plans</li>
+      <li>✅ Macro Cycling Nutrition</li>
+      <li>✅ 2 Weekly Calls + Check-ins</li>
+      <li>🎧 WhatsApp Voice/Text Support</li>
+      <li>🎥 10x Live Training Sessions</li>
+      <li>♻️ Unlimited Adjustments</li>
+    </ul>
+    <a href="#get-started" class="button">Go Elite</a>
+  </div>
+
+</div>
 
 
 
