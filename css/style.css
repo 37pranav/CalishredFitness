@@ -27,6 +27,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  position: relative;
   overflow-x: hidden;
 }
 ul li {
@@ -229,15 +230,17 @@ header .hamburger.active span:nth-child(3) {
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
-  padding: 15px;
+  padding: 80px 20px 140px;
   background: linear-gradient(-45deg, #2E3192, #007bff, #1f1fff, #3c5cda);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
+
 
 .home .container {
   display: flex;
