@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recommended Gear – Calishred</title>
+  <link rel="icon" href="images/title-icon.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #1a1a1a;
+      color: #f1f1f1;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #f1f1f1;
+    }
+    .slider-wrapper {
+      position: relative;
+    }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding-bottom: 10px;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+    }
+    .slider::-webkit-scrollbar {
+      display: none;
+    }
+    .product-card {
+      min-width: 260px;
+      flex: 0 0 auto;
+      background: #2a2a2a;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      text-align: center;
+      scroll-snap-align: start;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: 160px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+    .product-card h3 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #fff;
+    }
+    .product-card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+    .affiliate-btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      background: #00b4d8;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .disclaimer {
+      background: #252525;
+      padding: 20px;
+      border-top: 1px solid #444;
+      font-size: 13px;
+      color: #aaa;
+      margin-top: 60px;
+      text-align: center;
+    }
+    .section-divider {
+      margin-top: 50px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+    .nav-btn {
+      position: absolute;
+      top: 40%;
+      background: rgba(0, 180, 216, 0.8);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
+      z-index: 2;
+    }
+    .nav-left {
+      left: -10px;
+    }
+    .nav-right {
+      right: -10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img alt="logo" class="logo-img" src="images/logo.png" width="160" /></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Calishred Recommended Gear</h1>
+    <p style="text-align: center; max-width: 700px; margin: 10px auto;">
+      These are tools, gear, and supplements I trust and recommend. No fluff—just effective equipment for real results.
+    </p>
+
+    <!-- Equipment -->
+    <div class="section-divider"><h2>🏋️ Equipment</h2></div>
+    <div class="slider-wrapper">
+      <button class="nav-btn nav-left" onclick="scrollLeft(this)">&#10094;</button>
+      <div class="slider">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Resistance+Bands" alt="Resistance Bands">
+          <h3>Resistance Bands Set</h3>
+          <p>Compact & versatile—ideal for warm-ups, mobility work, or full workouts anywhere.</p>
+          <a class="affiliate-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Pull-Up+Bar" alt="Pull-Up Bar">
+          <h3>Doorway Pull-Up Bar</h3>
+          <p>Perfect for bodyweight strength—no drilling, fits most door frames.</p>
+          <a class="affiliate-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Parallettes" alt="Parallettes">
+          <h3>Heavy-Duty Parallettes</h3>
+          <p>Stable and compact bars for dips, L-sits, and planche work.</p>
+          <a class="affiliate-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+      <button class="nav-btn nav-right" onclick="scrollRight(this)">&#10095;</button>
+    </div>
+
+    <!-- Supplements -->
+    <div class="section-divider"><h2>🍽️ Supplements</h2></div>
+    <div class="slider-wrapper">
+      <button class="nav-btn nav-left" onclick="scrollLeft(this)">&#10094;</button>
+      <div class="slider">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Whey+Protein" alt="Whey Protein">
+          <h3>Whey Protein Isolate</h3>
+          <p>Clean, high-quality protein to support recovery and muscle growth.</p>
+          <a class="affiliate-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Creatine" alt="Creatine">
+          <h3>Creatine Monohydrate</h3>
+          <p>Science-backed supplement to enhance strength, power, and lean mass.</p>
+          <a class="affiliate-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Electrolytes" alt="Electrolytes">
+          <h3>Hydration Electrolytes</h3>
+          <p>Stay hydrated and perform better with essential minerals.</p>
+          <a class="affiliate-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+      <button class="nav-btn nav-right" onclick="scrollRight(this)">&#10095;</button>
+    </div>
+
+    <!-- Gear & Apparel -->
+    <div class="section-divider"><h2>🎒 Gear & Apparel</h2></div>
+    <div class="slider-wrapper">
+      <button class="nav-btn nav-left" onclick="scrollLeft(this)">&#10094;</button>
+      <div class="slider">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Foam+Roller" alt="Foam Roller">
+          <h3>Deep Tissue Foam Roller</h3>
+          <p>Great for recovery, mobility, and post-workout muscle relief.</p>
+          <a class="affiliate-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Gloves" alt="Lifting Gloves">
+          <h3>Grip & Weightlifting Gloves</h3>
+          <p>Protects hands and improves grip during bodyweight or weighted sessions.</p>
+          <a class="affiliate-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Calishred+Bag" alt="Gym Bag">
+          <h3>Calishred Gym Bag</h3>
+          <p>Simple, functional, and made to carry what matters.</p>
+          <a class="affiliate-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+      <button class="nav-btn nav-right" onclick="scrollRight(this)">&#10095;</button>
+    </div>
+
+    <!-- Courses & Books -->
+    <div class="section-divider"><h2>📚 Courses & Books</h2></div>
+    <div class="slider-wrapper">
+      <button class="nav-btn nav-left" onclick="scrollLeft(this)">&#10094;</button>
+      <div class="slider">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Bodyweight+Mastery" alt="Bodyweight Mastery Course">
+          <h3>Bodyweight Mastery Course</h3>
+          <p>A structured online course to improve calisthenics fundamentals step by step.</p>
+          <a class="affiliate-btn" href="#" target="_blank">View Course</a>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Mobility+Guide" alt="Mobility Training Book">
+          <h3>Ultimate Mobility Guide</h3>
+          <p>Learn how to unlock flexibility and joint strength for long-term gains.</p>
+          <a class="affiliate-btn" href="#" target="_blank">Buy Book</a>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x160?text=Nutrition+Blueprint" alt="Nutrition Blueprint">
+          <h3>Nutrition Blueprint for Athletes</h3>
+          <p>Practical, no-BS nutrition guide tailored for training and transformation.</p>
+          <a class="affiliate-btn" href="#" target="_blank">Buy Now</a>
+        </div>
+      </div>
+      <button class="nav-btn nav-right" onclick="scrollRight(this)">&#10095;</button>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+      <strong>Affiliate Disclaimer:</strong><br>
+      Some links are affiliate links; if you buy through them, Calishred may earn a small commission—at no extra cost to you.<br><br>
+      I only promote products I personally use or recommend to clients. Always consult your healthcare provider before starting new supplements or exercise gear.
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <hr class="footer-divider"/>
+      <ul class="footer-quick-links">
+        <li><a class="footer-links" href="https://merchant.razorpay.com/policy/OU4lVt2REUZDkn/privacy">Privacy Policy</a></li>
+        <li><a class="footer-links" href="https://merchant.razorpay.com/policy/OU4lVt2REUZDkn/terms">Terms & Conditions</a></li>
+        <li><a class="footer-links" href="https://merchant.razorpay.com/policy/OU4lVt2REUZDkn/refund">Refund & Cancellation</a></li>
+      </ul>
+      <div class="footer-logo-text">
+        <img alt="Calishred logo" src="images/logo.png" width="150px"/>
+        <p>© 2025 Calishred Fitness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Controls -->
+  <script>
+    function scrollLeft(btn) {
+      const slider = btn.nextElementSibling;
+      slider.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+    function scrollRight(btn) {
+      const slider = btn.previousElementSibling;
+      slider.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
