@@ -158,6 +158,62 @@ fbq('track', 'PageView');
 </section>
 <hr style="border: none; border-top: 1px solid #ddd; margin: 60px auto;" />
 
+                <section id="transformations" style="background-color: #ffffff; padding: 60px 20px;">
+  <div style="max-width: 1200px; margin: auto; text-align: center;">
+    <h2 style="color: #2E3192; font-size: 2rem; margin-bottom: 40px;">🏋️ Real Client Transformations</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+      <!-- Repeatable Card Start -->
+      {{#each transformations}}
+      <div style="flex: 1 1 280px; max-width: 300px;">
+        <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+          <div style="display: flex;">
+            <div style="width: 50%; aspect-ratio: 3/4; overflow: hidden;">
+              <img src="images/{{this.before}}" alt="Before" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="width: 50%; aspect-ratio: 3/4; overflow: hidden;">
+              <img src="images/{{this.after}}" alt="After" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <p style="margin: 10px; font-weight: 600;">{{this.caption}}</p>
+        </div>
+      </div>
+      {{/each}}
+      <!-- Repeatable Card End -->
+    </div>
+  </div>
+</section>
+
+<script>
+  const transformations = [
+    { before: 'before1.jpg', after: 'after1.jpeg', caption: 'Client 1 – Consistent Lean Gain' },
+    { before: 'before2.jpeg', after: 'after2.jpg', caption: 'Client 2 – Fat Loss & Definition' },
+    { before: 'before3.jpeg', after: 'after3.jpg', caption: 'Client 3 – 8kg Down in 3 Months' },
+    { before: 'before4.jpeg', after: 'after4.jpeg', caption: 'Client 4 – 4kg Lean Muscle Gain' },
+    { before: 'before5.jpeg', after: 'after5.jpeg', caption: 'Client 5 – Visible Body Recomp' },
+    { before: 'before6.jpg',  after: 'after6.jpg',  caption: 'Client 6 – Strength & Size Gains' },
+    { before: 'before7.jpg',  after: 'after7.jpg',  caption: 'Client 7 – Cut & Conditioned' },
+    { before: 'before8.jpg',  after: 'after8.jpg',  caption: 'Client 8 – Full Rebuild Transformation' }
+  ];
+
+  document.querySelector("#transformations .container > div").innerHTML = transformations.map(t => `
+    <div style='flex: 1 1 280px; max-width: 300px;'>
+      <div style='border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);'>
+        <div style='display: flex;'>
+          <div style='width: 50%; aspect-ratio: 3/4; overflow: hidden;'>
+            <img src='images/${t.before}' alt='Before' style='width: 100%; height: 100%; object-fit: cover;'>
+          </div>
+          <div style='width: 50%; aspect-ratio: 3/4; overflow: hidden;'>
+            <img src='images/${t.after}' alt='After' style='width: 100%; height: 100%; object-fit: cover;'>
+          </div>
+        </div>
+        <p style='margin: 10px; font-weight: 600;'>${t.caption}</p>
+      </div>
+    </div>
+  `).join('');
+</script>
+
+
                 
      <section id="features" style="background-color: #FFFFFF; color: #000000; padding: 80px 20px;">
   <div class="container" style="max-width: 1100px; margin: auto;">
