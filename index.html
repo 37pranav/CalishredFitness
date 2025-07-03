@@ -154,7 +154,7 @@ fbq('track', 'PageView');
     </div>
   </div>
         <div style="height: 60px;"></div>
-        <section id="transformations" style="background-color: #ffffff; padding: 60px 20px;">
+ <section id="transformations" style="background-color: #ffffff; padding: 60px 20px;">
   <div style="max-width: 1200px; margin: auto; text-align: center;">
     <h2 style="color: #2E3192; font-size: 2rem; margin-bottom: 40px;">🏋️ Real Client Transformations</h2>
 
@@ -292,6 +292,11 @@ fbq('track', 'PageView');
 <!-- Swiper JS Init -->
 <script>
   var swiper = new Swiper('.transformations-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
     slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
@@ -309,8 +314,6 @@ fbq('track', 'PageView');
   });
 </script>
 
-
-</section>
 <hr style="border: none; border-top: 1px solid #ddd; margin: 60px auto;" />
             
      <section id="features" style="background-color: #FFFFFF; color: #000000; padding: 80px 20px;">
